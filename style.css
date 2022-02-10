@@ -99,6 +99,7 @@ h6 {
             Main Header Part
 ---------------------------------------------*/
 .main-header {
+    position: relative;
     padding: 20px 0;
     box-shadow: 3px 3px 7px #000;
 }
@@ -118,6 +119,7 @@ h6 {
 }
 .main-menu ul li {
     display: inline;
+    transition: 0.5s all;
 }
 .main-menu ul li a {
     text-transform: uppercase;
@@ -130,7 +132,7 @@ h6 {
 .main-menu ul li.active a {
     color: #4cb3ff;
 }
-.main-menu ul li a:hover {
+.main-menu ul li:hover a {
     color: #4cb3ff;
 }
 .toggle-area {
@@ -173,7 +175,39 @@ h6 {
         width: 100%;
         padding: 0 20px;
     }
-	
+    /*----Top Header----*/
+    .header-top {
+        display: none;
+    }
+	.toggle-btn{
+        display: block;
+    }
+    .main-menu {
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        right: 100%;
+        background-color: green;
+        transition: 0.5s all;
+    }
+    .main-menu.mobile-menu {
+        right: 0;
+    }
+    .main-menu ul li {
+        display: inherit;
+    }
+    .main-menu ul li.active {
+        background-color: #4cb3ff;
+    }
+    .main-menu ul li.active a {
+        color: #fff;
+    }
+    .main-menu ul li:hover {
+        background-color: #4cb3ff;
+    }
+    .main-menu ul li:hover a{
+        color: #fff;
+    }
 }
 
 
@@ -208,5 +242,8 @@ h6 {
     Media For 540px
 -----------------------------------------------------------------*/
 @media screen and (max-width:540px){
-
+    /*---Appoinment Button--*/
+    .appoint-btn {
+        display: none;
+    }
  }
