@@ -101,7 +101,7 @@ h6 {
 .main-header {
     position: relative;
     padding: 20px 0;
-    box-shadow: 3px 3px 7px #000;
+    box-shadow: 3px 3px 7px #e9e9e9;
 }
 .main-header-row {
     display: flex;
@@ -166,9 +166,147 @@ h6 {
 
 
 
-/*------------------------------------------------------------------
-    Media For 1024px
------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------
+            Footer Top Area
+---------------------------------------------*/
+.footer-top {
+    padding: 50px 0;
+    background: #262b47;
+    border-top: 1px solid #f7f7f7;
+}
+.footer-top-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer-about,
+.explore-list,
+.footer-services,
+.subscribe {
+    padding: 0 10px;
+}
+.footer-about .footer-logo{
+	margin-bottom: 20px;
+}
+.footer-about p{
+	color: #FFF;
+	line-height: 1.6em;
+	font-size: 15px;
+    padding-top: 8px;
+}
+.explore-list h3,
+.footer-services h3,
+.subscribe h3 {
+    text-transform: capitalize;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: #FFF;
+}
+.explore-list ul,
+.footer-services ul {
+    list-style: none;
+}
+.explore-list ul li,
+.footer-services ul li {
+    margin: 0px 0;
+}
+.explore-list ul li a,
+.footer-services ul li a {
+    text-transform: capitalize;
+    color: #000;
+    font-size: 15px;
+    padding: 8px 0;
+    color: #FFF;
+    transition: 0.5s all;
+}
+.footer-services ul li a:hover, 
+.explore-list ul li a:hover {
+    color: #3393f0;
+}
+.subscribe p {
+    font-size: 14px;
+    color: #FFF;
+    line-height: 1.6em;
+}
+.subscribe form {
+    margin-top: 20px;
+}
+.subscribe form input{
+	width: 100%;
+	margin-bottom: 14px;
+	padding: 10px;
+	outline: none;
+	border-radius: 8px;
+}
+.subscribe form input[type="submit"]{
+	background: #3393f0;
+	color: #FFF;
+	border: 1px solid #3393f0;
+	font-weight: bold;
+	font-size: 14px;
+}
+/*--------------------------------------------
+            Footer Bottom Area
+---------------------------------------------*/
+.footer-bottom {
+    padding: 20px 0;
+    background: #000;
+}
+.footer-bottom-row {
+    display: flex;
+    justify-content: space-between;
+}
+.copy-right {
+    margin: 0px 10px;
+}
+.copy-right p {
+    font-size: 14px;
+    color: #FFF;
+    line-height: 1.6em;
+}
+.copy-right p a {
+    color: #3393f0;
+}
+.privacy ul {
+    list-style: none;
+}
+.privacy ul li {
+    display: inline;
+}
+.privacy ul li a {
+    font-size: 14px;
+    color: #FFF;
+    padding: 0px 16px;
+    transition: 0.5s all;
+}
+.privacy ul li a:hover {
+    color: #3393f0;
+}
+.privacy ul li:not(:last-child):after {
+    position: relative;
+    content: '';
+    display: inline-block;
+    margin-bottom: -2px;
+    height: 14px;
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-color: #FFF;
+}
+
+/*----------------------------------------------------------------------------
+                     Media For 1024px
+-----------------------------------------------------------------------------*/
 @media screen and (max-width:1024px){
     /*-------Common Css -------*/
     .container {
@@ -208,13 +346,22 @@ h6 {
     .main-menu ul li:hover a{
         color: #fff;
     }
+
+    /*----Footer Area ----*/
+    .footer-top-row {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-about,
+    .explore-list {
+        margin-bottom: 50px
+    }
 }
 
 
 
-/*-----------------------------------------------------------------
+/*------------------------------------------------------------------------------
     Media For 768px
------------------------------------------------------------------*/
+-----------------------------------------------------------------------------*/
 @media screen and (max-width:768px){
     /*------------Typography-------*/
     h1 {
@@ -235,6 +382,24 @@ h6 {
     h6 {
         font-size: 0.8rem;
     }
+
+    /*---Footer Area----*/
+    .footer-top-row {
+        grid-template-columns: 1fr;
+    }
+    .footer-services {
+        margin-bottom: 50px
+    }
+    .footer-bottom-row {
+		display:inherit;
+	}
+	.copy-right{
+		text-align:center;
+		margin-bottom:12px;
+	}
+	.privacy{
+		text-align:center;
+	}
  }
 
 
