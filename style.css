@@ -41,7 +41,7 @@ ul {
 }
 /*------------Typography-------*/
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 h2 {
     font-size: 2.5rem;
@@ -101,7 +101,7 @@ h6 {
 .main-header {
     position: relative;
     padding: 20px 0;
-    box-shadow: 3px 3px 7px #e9e9e9;
+    box-shadow: 0px 7px 8px 0 #0000002b;
 }
 .main-header-row {
     display: flex;
@@ -161,9 +161,116 @@ h6 {
 	border: 1px solid #000;
 }
 
+/*----------------------------------------------------
+            Home Section Slider
+----------------------------------------------------*/
+.home-section{
+	background-image: url('images/p11.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.home-section .overlay{
+	padding: 100px 0;
+	padding-bottom: 200px;
+	background-color: rgba(0,0,0,0.45);
+}
+.home-slider .slide{
+	width: 60%;
+	margin: 0 10px;
+}
+.home-slider .slide h1{
+	line-height: 1.3em;
+	margin-bottom: 20px;
+	color: #FFF;
+}
+.home-slider .slide h5{
+	line-height: 1.4em;
+    letter-spacing: 0.5px;
+    font-weight: normal;
+	color: #FFF;
+}
+.home-slider .slide a{
+	text-transform: capitalize;
+	font-size: 14px;
+	background: #f8931d;
+	color: #FFF;
+	font-weight: bold;
+	padding: 16px 30px;
+	margin-top: 20px;
+	border-radius: 30px;
+	transition: 0.5s;
+}
+.home-slider .slide a:hover{
+	background: #3c2800;
+}
+/*----------------------------------------------------
+            Discount Area
+----------------------------------------------------*/
+.discount-area {
+	padding: 0;
+}
+.discount-box {
+	margin: 0 10px;
+	margin-top: -120px;
+}
+.discount-row {
+	display: flex;
+}
+.online-d {
+	overflow: hidden;
+    width: 50%;
+	background: url('images/tab1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 30px;
+}
+.accecories-d {
+	overflow: hidden;
+    width: 50%;
+	background: url('images/tab2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 30px;
+}
 
+.online-d .content,
+.accecories-d .content {
+	width: 55%;
+	float: right;
+}
+.online-d .content h4,
+.accecories-d .content h4 {
+	line-height: 1.3em;
+	color: #FFF;
+	margin-bottom: 10px;
+}
+.online-d .content p,
+.accecories-d .content p {
+	font-weight: bold;
+	color: #FFF;
+	line-height: 1.5em;
+}
 
-
+.online-d .content a,
+.accecories-d .content a {
+	text-transform: capitalize;
+	font-size: 14px;
+	background: #3c2800;
+	color: #FFF;
+	font-weight: bold;
+	padding: 16px 30px;
+	margin-top: 20px;
+	border-radius: 30px;
+	transition: 0.5s all;
+}
+.online-d .content a:hover,
+.accecories-d .content a:hover {
+	background: #FFF;
+	color: #000;
+}
 
 
 
@@ -365,7 +472,7 @@ h6 {
 @media screen and (max-width:768px){
     /*------------Typography-------*/
     h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
     h2 {
         font-size: 2rem;
@@ -382,7 +489,28 @@ h6 {
     h6 {
         font-size: 0.8rem;
     }
+    /*----Home Section-----*/
+    .home-slider .slide {
+        width: inherit;
+        text-align: center;
+    }
 
+    /*----Discount Section----*/
+    .discount-area .container {
+        padding: 0;
+    }
+    .discount-box {
+        margin: 0;
+        margin-top: -120px;
+    }
+    .discount-row {
+        flex-direction: column;
+    }
+    .online-d,
+    .accecories-d {
+        width: 100%;
+    }
+    
     /*---Footer Area----*/
     .footer-top-row {
         grid-template-columns: 1fr;
@@ -407,6 +535,13 @@ h6 {
     Media For 540px
 -----------------------------------------------------------------*/
 @media screen and (max-width:540px){
+    /*----Typography----*/
+    h1 {
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
     /*---Appoinment Button--*/
     .appoint-btn {
         display: none;
