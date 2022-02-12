@@ -1126,4 +1126,7 @@ h6 {
     .testimonial-area {
         background-position: 50% 100%
     }
+    .offer-img img {
+        width: 100%;
+    }
  }
