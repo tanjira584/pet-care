@@ -594,8 +594,44 @@ h6 {
 	font-style: italic;
 	color: #787878;
 }
-
-
+/*----------------------------------------------------
+            Blogs Section
+----------------------------------------------------*/
+.blogs-area {
+	padding: 100px 0;
+	padding-bottom: 150px;
+}
+.blogs-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.pet-news {
+	margin: 0 10px;
+    background: #f7f7f7;
+    box-shadow: 0px 1px 7px 0px #00000078;
+	border-bottom: 3px solid #f8931d;
+}
+.pet-news img {
+	width: 100%;
+}
+.pet-news .content {
+	padding: 30px;
+}
+.pet-news .content h3 {
+	font-size: 24px;
+	text-transform: capitalize;
+	color: #333333;
+	margin-bottom: 16px;
+}
+.pet-news .content span {
+	color: #f8931d;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.pet-news .content p {
+	color: #787878;
+	line-height: 1.6em;
+}
 
 
 
@@ -894,7 +930,13 @@ h6 {
     .testimonial-area {
         background-position: 30% 30%
     }
-   
+   /*----Blogs Section----*/
+    .blogs-row {
+        grid-template-columns: 1fr;
+    }
+    .pet-news:not(:last-child) {
+        margin-bottom: 30px;
+    }
     /*---Footer Area----*/
     .footer-top-row {
         grid-template-columns: 1fr;
