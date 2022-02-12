@@ -425,11 +425,13 @@ h6 {
 	color: #787878;
 	line-height: 1.6em;
 }
-.service-area .btn {
+.service-area .btn,
+.vetenary-area .btn {
 	text-align: center;
 	margin-top: 40px;
 }
-.service-area .btn a {
+.service-area .btn a,
+.vetenary-area .btn a {
     text-transform: capitalize;
     font-size: 14px;
     background: #f8931d;
@@ -440,7 +442,8 @@ h6 {
     border-radius: 30px;
     transition: 0.5s;
 }
-.service-area .btn a:hover {
+.service-area .btn a:hover,
+.vetenary-area .btn a:hover {
 	background: #3c2800;
 }
 /*----------------------------------------------------
@@ -482,6 +485,99 @@ h6 {
 	width: 100%;
 	border: 12px solid #FFF;
 }
+/*----------------------------------------------------
+            Vetenary Section
+----------------------------------------------------*/
+.vetenary-area {
+	padding: 100px 0;
+	background: #f7f7f7;
+}
+.vetenary-row {
+    display: flex;
+}
+.vetenary-box {
+	margin: 0 10px;
+    text-align: center;
+    background: #f7f7f7;
+    box-shadow: 0px 1px 7px 0px #00000078;
+	border-bottom: 3px solid #f8931d;
+}
+.vetenary-img {
+	position: relative;
+}
+.home-vetenary-social {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	width: 100%;
+	z-index: 9999;
+}
+.home-vetenary-social ul {
+	list-style: none;
+	text-align: center;
+}
+.home-vetenary-social ul li {
+	display: inline;
+}
+.home-vetenary-social ul li a {
+	padding: 10px;
+	background: rgba(0,0,0,0.45);
+	color: #FFF;
+	border-radius: 6px;
+	transition: 0.5s all;
+}
+.home-vetenary-social ul li a:hover {
+	background: #f8931d;
+}
+.home-vetenary-social ul li a i {
+	color: #FFF;
+}
+.vetenary-img img {
+	width: 100%;
+}
+.vetenary-title {
+	padding: 30px;
+}
+.vetenary-title h3 {
+	font-size: 24px;
+	text-transform: capitalize;
+	color: #333333;
+	margin-bottom: 10px;
+}
+.vetenary-title h6 {
+	font-size: 16px;
+	color: #f8931d;
+	text-transform: capitalize;
+}
+/* .vetenary-area .btn {
+	text-align: center;
+	margin-top: 40px;
+}
+.vetenary-area .btn a {
+    text-transform: capitalize;
+    font-size: 14px;
+    background: #f8931d;
+    color: #FFF;
+    font-weight: bold;
+    padding: 16px 40px;
+    margin-top: 20px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.home-vetenary .btn a:hover {
+	background: #3c2800;
+} */
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -676,7 +772,7 @@ h6 {
     .welcome-info {
         text-align: center;
     }
-
+    
 
     /*----Footer Area ----*/
     .footer-top-row {
@@ -754,11 +850,13 @@ h6 {
     .happy-customer:nth-child(2) {
         margin-bottom: 40px;
     }
-    /*----Service Area ----*/
-    .service-row {
+    /*----Service Area & Vetenary Area----*/
+    .service-row,
+    .vetenary-row {
         display: inherit;
     }
-    .pet-medical:not(:last-child) {
+    .pet-medical:not(:last-child),
+    .vetenary-box:not(:last-child) {
         margin-bottom: 30px;
     }
     /*----Allergies Section ----*/
@@ -766,6 +864,8 @@ h6 {
         width: 100%;
         text-align: center;
     }
+    
+   
     /*---Footer Area----*/
     .footer-top-row {
         grid-template-columns: 1fr;
