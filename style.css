@@ -372,8 +372,77 @@ h6 {
 	color: #f8931d;
 	text-transform: capitalize;
 }
-
-
+/*----------------------------------------------------
+            Services Section
+----------------------------------------------------*/
+.service-area {
+	padding: 100px 0;
+}
+.section-info {
+	text-align: center;
+	margin-bottom: 50px;
+}
+.section-info h1 {
+	text-transform: capitalize;
+	color: #f8931d;
+	margin-bottom: 16px;
+    margin-top: 0;
+}
+.section-info hr {
+	display: inline-block;
+	width: 150px;
+	color: #f8931d;
+	text-align: center;
+	border: 1px solid #f8931d;
+}
+.section-info h5 {
+	margin-top: 16px;
+	color: #616160;
+}
+.service-row {
+    display: flex;
+}
+.pet-medical {
+	margin: 0 10px;
+    text-align: center;
+    background: #f7f7f7;
+    box-shadow: 0px 1px 7px 0px #00000078;
+	border-bottom: 3px solid #f8931d;
+}
+.pet-medical img {
+	width:100%;
+}
+.pet-medical .content {
+	padding: 30px;
+}
+.pet-medical .content h3 {
+	font-size: 24px;
+	text-transform: capitalize;
+	color: #333333;
+	margin-bottom: 10px;
+}
+.pet-medical .content p {
+	color: #787878;
+	line-height: 1.6em;
+}
+.service-area .btn {
+	text-align: center;
+	margin-top: 40px;
+}
+.service-area .btn a {
+    text-transform: capitalize;
+    font-size: 14px;
+    background: #f8931d;
+    color: #FFF;
+    font-weight: bold;
+    padding: 16px 40px;
+    margin-top: 20px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.service-area .btn a:hover {
+	background: #3c2800;
+}
 
 
 
@@ -647,6 +716,13 @@ h6 {
     .happy-customer:nth-child(1),
     .happy-customer:nth-child(2) {
         margin-bottom: 40px;
+    }
+    /*----Service Area ----*/
+    .service-row {
+        display: inherit;
+    }
+    .pet-medical:not(:last-child) {
+        margin-bottom: 30px;
     }
     /*---Footer Area----*/
     .footer-top-row {
