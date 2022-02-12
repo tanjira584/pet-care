@@ -271,6 +271,83 @@ h6 {
 	background: #FFF;
 	color: #000;
 }
+/*----------------------------------------------------
+            Discount Area
+----------------------------------------------------*/
+.welcome-area{
+	padding: 100px 0;
+}
+
+.welcome-row {
+    display: flex;
+}
+.welcome-img {
+	width: 33.33%;
+    padding: 0 10px;
+}
+.welcome-img img {
+	width: 100%;
+}
+
+.welcome-recipies {
+	width: 66.34%;
+    padding: 0 10px;
+}
+
+
+.welcome-info {
+	margin-bottom: 20px;
+}
+.welcome-info h2 {
+	margin-bottom: 10px;
+	color: #f8931d;
+}
+.welcome-info h5 {
+	margin-bottom: 16px;
+	color: #333333;
+}
+.welcome-info p {
+	color: #787878;
+	line-height: 1.6em;
+	font-size: 16px;
+}
+
+.welcome-services {
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.pet-gromming {
+	display: flex;
+	padding: 20px;
+}
+.pet-gromming .icon-img {
+	width: 30%;
+	padding: 0 10px;
+}
+.pet-gromming .icon-img i {
+	font-size: 40px;
+	color: #f8931d;
+}
+.pet-gromming .gromming-content {
+	margin: 0 10px;
+}
+.pet-gromming .gromming-content h4 {
+	text-transform: capitalize;
+	margin-bottom: 10px;
+}
+.pet-gromming .gromming-content p{
+	font-size: 16px;
+	color: #787878;
+	line-height: 1.6em;
+}
+
+
+
+
+
+
+
 
 
 
@@ -453,6 +530,17 @@ h6 {
     .main-menu ul li:hover a{
         color: #fff;
     }
+    /*----Welcome Area----*/
+    .welcome-img {
+        display: none;
+    }
+    .welcome-recipies {
+        width: 100%;
+    }
+    .welcome-info {
+        text-align: center;
+    }
+
 
     /*----Footer Area ----*/
     .footer-top-row {
@@ -510,7 +598,18 @@ h6 {
     .accecories-d {
         width: 100%;
     }
-    
+    /*----Welcome Area ----*/
+    .welcome-services {
+        grid-template-columns: 1fr;
+    }
+    .pet-gromming {
+        display: inherit;
+        text-align: center;
+    }
+    .pet-gromming .icon-img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
     /*---Footer Area----*/
     .footer-top-row {
         grid-template-columns: 1fr;
