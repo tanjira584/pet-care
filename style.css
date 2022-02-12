@@ -632,12 +632,119 @@ h6 {
 	color: #787878;
 	line-height: 1.6em;
 }
+/*--------------------------------------------
+             Special Offer Arrea
+---------------------------------------------*/
+.special-offer{
+	background-image: url('images/pattern.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.offer-row {
+	display: flex;
+}
+.offer-img {
+	margin: 0px 16px;
+}
+.offer-img img {
+	display: inline-block;
+	margin-top: -100px;
+}
+.offer-content {
+	margin: 0px 10px;
+	padding: 100px 0;
+}
+.offer-content h3 {
+	font-size: 34px;
+	text-transform: uppercase;
+	color: #FFF;
+	margin-bottom: 10px;
+}
+.offer-content h5 {
+	font-size: 20px;
+	color: #FFF;
+	font-weight: normal;
+	text-transform: capitalize;
+	margin-bottom: 16px;
+}
+.offer-content p {
+	line-height: 1.6em;
+	margin-bottom: 20px;
+	color: #FFF;
+}
+.offer-content a {
+    text-transform: capitalize;
+    font-size: 14px;
+    background: #3c2800;
+    color: #FFF;
+    font-weight: bold;
+    padding: 16px 30px;
+    margin-top: 20px;
+    border-radius: 30px;
+    transition: 0.5s all;
+}
+.offer-content	a:hover { 
+	background: #FFF;
+    color: #000;
+}
+/*--------------------------------------------
+            Sponsor Section
+---------------------------------------------*/
+.sponsor-area {
+	padding: 100px 0;
+}
 
-
-
-
-
-
+.sponsor-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.sponsor-img {
+	margin: 0 10px;
+}
+.sponsor-img img {
+	width: 100%;
+}
+/*--------------------------------------------
+            Appoinment Section
+---------------------------------------------*/
+.appoinment-area {
+	padding: 100px 0;
+	background-image: url('images/pattern.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.appoinment-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.appionment-content h4 {
+	font-size: 30px;
+	text-transform: capitalize;
+	margin-bottom: 16px;
+	color: #FFF;
+}
+.appionment-content h5 {
+	font-size: 20px;
+	color: #FFF;
+}
+.appionment-btn a {
+    text-transform: capitalize;
+    font-size: 14px;
+    background: #3c2800;
+    color: #FFF;
+    font-weight: bold;
+    padding: 16px 30px;
+    margin-top: 20px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.appionment-btn a:hover {
+	background: #FFF;
+    color: #000;
+}
 
 
 
@@ -831,7 +938,15 @@ h6 {
     .welcome-info {
         text-align: center;
     }
-    
+    /*----Sponsor Section----*/
+    .sponsor-row {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .sponsor-img:nth-child(1),
+    .sponsor-img:nth-child(2),
+    .sponsor-img:nth-child(3) {
+        margin-bottom: 30px;
+    }
 
     /*----Footer Area ----*/
     .footer-top-row {
@@ -936,6 +1051,39 @@ h6 {
     }
     .pet-news:not(:last-child) {
         margin-bottom: 30px;
+    }
+    /*----Special Offer----*/
+    .offer-row {
+        display: inherit;
+    }
+    .offer-img {
+        text-align: center;
+    }
+    .offer-content {
+        text-align: center;
+    }
+    /*----Sponsor Section----*/
+    .sponsor-row {
+        grid-template-columns: 1fr 1fr;
+    }
+    .sponsor-img:nth-child(4) {
+        margin-bottom: 30px;
+    }
+    /*----Appoinment Section -----*/
+    .appoinment-row {
+        display: inherit;
+    }
+    .appionment-content {
+        text-align: center;
+    }
+    .appionment-content h4 {
+        font-size: 20px;
+    }
+    .appionment-content h5 {
+        font-size: 16px;
+    }
+    .appionment-btn {
+        text-align: center;
     }
     /*---Footer Area----*/
     .footer-top-row {
