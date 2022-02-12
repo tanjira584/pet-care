@@ -549,28 +549,51 @@ h6 {
 	color: #f8931d;
 	text-transform: capitalize;
 }
-/* .vetenary-area .btn {
+/*----------------------------------------------------
+            Testimonial Section
+----------------------------------------------------*/
+.testimonial-area {
+	padding: 100px 0;
+	background-image: url('images/p11.jpg');
+	background-repeat: no-repeat;
+	background-position :0% 30%;
+}
+.people-says {
 	text-align: center;
-	margin-top: 40px;
+	margin: 0 10px;
 }
-.vetenary-area .btn a {
-    text-transform: capitalize;
-    font-size: 14px;
-    background: #f8931d;
-    color: #FFF;
-    font-weight: bold;
-    padding: 16px 40px;
-    margin-top: 20px;
-    border-radius: 30px;
-    transition: 0.5s;
+.people .pre-quote {
+	margin-bottom: 20px;
 }
-.home-vetenary .btn a:hover {
-	background: #3c2800;
-} */
-
-
-
-
+.people .pre-quote i {
+	font-size: 50px;
+	color: #f8931d;
+}
+.people .content {
+	margin-bottom: 20px;
+}
+.people .content p {
+	font-size: 22px;
+	font-style: italic;
+	line-height: 1.6em;
+	width: 80%;
+	margin: auto;
+}
+.people-info img {
+	width: 100px;
+	border-radius: 50%;
+	border: 4px solid #f8931d;
+}
+.people-info h4 {
+	font-size: 22px;
+	color: #f8931d;
+	margin-top: 10px;
+	margin-bottom: 6px;
+}
+.people-info p{
+	font-style: italic;
+	color: #787878;
+}
 
 
 
@@ -864,7 +887,13 @@ h6 {
         width: 100%;
         text-align: center;
     }
-    
+    /*----Testimonial Section----*/
+    .people .content p {
+        width: 90%;
+    }
+    .testimonial-area {
+        background-position: 30% 30%
+    }
    
     /*---Footer Area----*/
     .footer-top-row {
@@ -900,5 +929,12 @@ h6 {
     /*---Appoinment Button--*/
     .appoint-btn {
         display: none;
+    }
+    /*----Testimonial Section----*/
+    .people .content p {
+        width: 96%;
+    }
+    .testimonial-area {
+        background-position: 50% 100%
     }
  }
