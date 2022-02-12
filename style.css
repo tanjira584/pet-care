@@ -443,8 +443,45 @@ h6 {
 .service-area .btn a:hover {
 	background: #3c2800;
 }
-
-
+/*----------------------------------------------------
+            Allergies Section
+----------------------------------------------------*/
+.allergies-area {
+	background-image: url('images/p2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.allergies-area .overlay {
+	padding: 100px 0;
+	background-color: rgba(0,0,0,.35);
+}
+.allergies-info {
+    width: 45%;
+	padding: 0 10px;
+}
+.allergies-info h3 {
+	font-size: 32px;
+	text-transform: capitalize;
+	color: #f8931d;
+	margin-bottom: 14px;
+}
+.allergies-info h6 {
+	font-size: 17px;
+	line-height: 1.4em;
+	color: #FFF;
+	margin-bottom: 16px;
+}
+.allergies-info p {
+	line-height: 1.6em;
+	color: #FFF;
+	margin-bottom: 30px;
+}
+.allergies-info img {
+	display: inline-block;
+	width: 100%;
+	border: 12px solid #FFF;
+}
 
 
 
@@ -723,6 +760,11 @@ h6 {
     }
     .pet-medical:not(:last-child) {
         margin-bottom: 30px;
+    }
+    /*----Allergies Section ----*/
+    .allergies-info {
+        width: 100%;
+        text-align: center;
     }
     /*---Footer Area----*/
     .footer-top-row {
