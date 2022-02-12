@@ -272,12 +272,11 @@ h6 {
 	color: #000;
 }
 /*----------------------------------------------------
-            Discount Area
+            Welcome Area
 ----------------------------------------------------*/
 .welcome-area{
 	padding: 100px 0;
 }
-
 .welcome-row {
     display: flex;
 }
@@ -288,13 +287,10 @@ h6 {
 .welcome-img img {
 	width: 100%;
 }
-
 .welcome-recipies {
 	width: 66.34%;
     padding: 0 10px;
 }
-
-
 .welcome-info {
 	margin-bottom: 20px;
 }
@@ -341,7 +337,41 @@ h6 {
 	color: #787878;
 	line-height: 1.6em;
 }
+/*----------------------------------------------------
+            Counter Area
+----------------------------------------------------*/
+.counter-area {
+	background-image: url('images/p8.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.counter-area .overlay {
+	padding: 100px 0;
+	background-color: rgba(0,0,0,0.65);
+}
 
+.counter-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.happy-customer {
+	margin: 0 16px;
+	padding: 10px;
+	text-align: center;
+}
+.happy-customer i {
+	font-size: 54px;
+	color: #f8931d;
+}
+.happy-customer h1 {
+	color: #FFF;
+	margin: 10px 0;
+}
+.happy-customer h5 {
+	color: #f8931d;
+	text-transform: capitalize;
+}
 
 
 
@@ -609,6 +639,14 @@ h6 {
     .pet-gromming .icon-img {
         width: 100%;
         margin-bottom: 10px;
+    }
+    /*----Counter Area----*/
+    .counter-row {
+        grid-template-columns: 1fr 1fr;
+    }
+    .happy-customer:nth-child(1),
+    .happy-customer:nth-child(2) {
+        margin-bottom: 40px;
     }
     /*---Footer Area----*/
     .footer-top-row {
